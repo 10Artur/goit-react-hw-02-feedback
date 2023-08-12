@@ -1,10 +1,4 @@
-export const Statistics = ({
-  good,
-  neutral,
-  bad,
-  total,
-  positivePercentage,
-}) => {
+export const Statistics = ({ good, neutral, bad, total, percentage }) => {
   return (
     <ul>
       <li>
@@ -20,8 +14,24 @@ export const Statistics = ({
         <span> Total: {total} </span>
       </li>
       <li>
-        <span> Positive feedback: {positivePercentage} </span>
+        <span> Positive feedback: {percentage}% </span>
       </li>
     </ul>
   );
 };
+
+// export const Statistics = ({
+//   good,
+//   neutral,
+//   bad,
+//   total,
+//   positivePercentage,
+// }) => (
+//   <div>
+//     <p>Good: {good}</p>
+//     <p>Neutral: {neutral}</p>
+//     <p>Bad: {bad}</p>
+//     <p>Total: {total}</p>
+//     <p>Positive: {positivePercentage.toFixed(2)}%</p>
+//   </div>
+// );
