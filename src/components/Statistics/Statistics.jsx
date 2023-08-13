@@ -1,37 +1,23 @@
+import { StatisticsList, StatisticsText } from './Statistics.styled';
+
 export const Statistics = ({ good, neutral, bad, total, percentage }) => {
   return (
-    <ul>
+    <StatisticsList>
       <li>
-        <span> Good: {good} </span>
+        <StatisticsText> Good: {good} </StatisticsText>
       </li>
       <li>
-        <span> Neutral: {neutral} </span>
+        <StatisticsText> Neutral: {neutral} </StatisticsText>
       </li>
       <li>
-        <span> Bad: {bad} </span>
+        <StatisticsText> Bad: {bad} </StatisticsText>
       </li>
       <li>
-        <span> Total: {total} </span>
+        <StatisticsText> Total: {total} </StatisticsText>
       </li>
       <li>
-        <span> Positive feedback: {percentage}% </span>
+        <StatisticsText> Positive feedback: {percentage}% </StatisticsText>
       </li>
-    </ul>
+    </StatisticsList>
   );
 };
-
-// export const Statistics = ({
-//   good,
-//   neutral,
-//   bad,
-//   total,
-//   positivePercentage,
-// }) => (
-//   <div>
-//     <p>Good: {good}</p>
-//     <p>Neutral: {neutral}</p>
-//     <p>Bad: {bad}</p>
-//     <p>Total: {total}</p>
-//     <p>Positive: {positivePercentage.toFixed(2)}%</p>
-//   </div>
-// );

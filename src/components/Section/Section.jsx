@@ -1,6 +1,8 @@
+import { SectionContainer, SectionTitle } from './Section.styled';
+
 export const Section = ({ title, children }) => (
-  <div>
-    <h2> {title} </h2>
+  <SectionContainer>
+    <SectionTitle> {title} </SectionTitle>
     {children}
-  </div>
+  </SectionContainer>
 );
